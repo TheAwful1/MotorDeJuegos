@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MotorDeJuegos", "MotorDeJuegos\MotorDeJuegos.csproj", "{FC570646-2F68-43B4-9652-5A00D2596949}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FC570646-2F68-43B4-9652-5A00D2596949}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC570646-2F68-43B4-9652-5A00D2596949}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC570646-2F68-43B4-9652-5A00D2596949}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC570646-2F68-43B4-9652-5A00D2596949}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1FA8E074-7459-4DF8-8F4A-3A8F7991624D}
+	EndGlobalSection
+EndGlobal
