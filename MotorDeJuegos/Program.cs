@@ -1,4 +1,6 @@
-﻿namespace MotorDeJuegos;
+﻿using OpenTK.Windowing.Desktop;
+
+namespace MotorDeJuegos;
 
 class Program
 {
@@ -10,4 +12,5 @@ class Program
 
         }
     }
+
 }

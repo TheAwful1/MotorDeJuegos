@@ -12,17 +12,19 @@ using OpenTK.Windowing.GraphicsLibraryFramework;
 
 namespace MotorDeJuegos
 {
-    internal class Juego : GameWindow
+    public class Juego : GameWindow
     {
-        float[] vertices = 
+        float[] vertices = //Un vertice es el punto que conecta la figura geometrica
         {
             0f, 0.5f, 0f,  //Vertice de arriba
             -0.5f, -0.5f, 0f, //Vertice de la izquierda 
             0.5f,-0.5f, 0f  //Vertice de la derecha
         
         };
-        // Render Pipeline vars
-        int vao;
+        //El Rendering Pipeline es la secuencia de pasos que toma OpenGL cuando renderiza un objeto
+        //Una operacion de renderizado es 
+        // Render Pipeline vars (variables de )
+        int vao; 
         int shaderProgram;
         int vbo;
         
@@ -132,16 +134,16 @@ namespace MotorDeJuegos
             //Esto dibuja el triangulo
             GL.UseProgram(shaderProgram); // une el vao
             GL.BindVertexArray(vao); // usa el programa de shader
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);//Dibuja el triangulo  | args = Primitive type, first vertex, last vertex
-
+            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);//Dibuja el triangulo  | args = Primitive type , first vertex, last vertex. Recibe los parametros: Tipo primitivo (clases que se usan para construir figuras en OpenGL), primer vertice y ultimo vertice
+            //
             Context.SwapBuffers();
             base.OnRenderFrame(args);
 
            
         }
 
-        // called every frame. All updating happens here
-        protected override void OnUpdateFrame(FrameEventArgs args) 
+        // se llama esta funcion en cada frame. Todas las actualizaciones (Updates) pasan aqui
+        protected override void OnUpdateFrame(FrameEventArgs args) //Nota que esto es un Override una sobreescritura de una funcion de la clase GameWindow
         {
             base.OnUpdateFrame(args);
         }

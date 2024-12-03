@@ -29,3 +29,4 @@ C:\Users\User\source\repos\MotorDeJuegos\MotorDeJuegos\obj\Debug\net8.0\refint\M
 C:\Users\User\source\repos\MotorDeJuegos\MotorDeJuegos\obj\Debug\net8.0\MotorDeJuegos.pdb
 C:\Users\User\source\repos\MotorDeJuegos\MotorDeJuegos\obj\Debug\net8.0\MotorDeJuegos.genruntimeconfig.cache
 C:\Users\User\source\repos\MotorDeJuegos\MotorDeJuegos\obj\Debug\net8.0\ref\MotorDeJuegos.dll
+c:\Users\User\source\repos\MotorDeJuegos\MotorDeJuegos\obj\Debug\net8.0\MotorDeJuegos.sourcelink.json
