@@ -57,7 +57,7 @@ namespace MotorDeJuegos
             base.OnLoad();
 
             //Genera el VBO
-            vao = GL.GenVertexArray();
+            vao = GL.GenVertexArray(); 
 
 
             //Crea un buffer
