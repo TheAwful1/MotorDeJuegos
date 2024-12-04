@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj": {}
+    "c:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj": {
+    "c:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj",
+        "projectUniqueName": "c:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj",
         "projectName": "MotorDeJuegos",
-        "projectPath": "C:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj",
+        "projectPath": "c:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\MotorDeJuegos.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\obj\\",
+        "outputPath": "c:\\Users\\User\\source\\repos\\MotorDeJuegos\\MotorDeJuegos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
