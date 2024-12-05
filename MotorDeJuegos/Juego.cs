@@ -24,9 +24,9 @@ namespace MotorDeJuegos
         //Este paso se llama especificacion de vertices el proceso de ¨setupear¨ los objetos necesarios para su renderizacion posterior
         //Para enviar los datos de vertices a renderizar es necesario crear una secuencia de vertices, para posteriormente indicarle a opengl como interpretar  la secuencia
         // 
-        int vao; 
+        int vao; //Vertex Array Object
         int shaderProgram;
-        int vbo;
+        int vbo;//Vertex Buffer Object
         //CONSTANTES
         int Anchura, Altura;
 
@@ -36,12 +36,13 @@ namespace MotorDeJuegos
         {
             //Centrar la ventana en el monitor         
 
-           this.Anchura = anchura;
+            this.Anchura = anchura;
             this.Altura = altura;
 
             CenterWindow(new Vector2i(anchura,altura));
         }
         //Esta funcion se llama cada vez que se le cambia el tamaño a la pantalla
+        
         protected override void OnResize(ResizeEventArgs e)//Esta clase ResizeEventArgs tiene tres propiedades: Width, Height, Size
         {
            
@@ -57,7 +58,7 @@ namespace MotorDeJuegos
         {
             base.OnLoad();
 
-            //Genera el VBO
+            //Genera el VAO
             vao = GL.GenVertexArray(); 
 
 
