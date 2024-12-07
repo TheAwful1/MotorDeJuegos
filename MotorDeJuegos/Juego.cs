@@ -23,7 +23,8 @@ namespace MotorDeJuegos
         };
         //Este paso se llama especificacion de vertices el proceso de ¨setupear¨ los objetos necesarios para su renderizacion posterior
         //Para enviar los datos de vertices a renderizar es necesario crear una secuencia de vertices, para posteriormente indicarle a opengl como interpretar  la secuencia
-        // 
+        
+        // La razon de porque estos objetos y variables son de tipo entero es porque OpenGL les asigna un numero identificador lo que pasa porque OpenGL esta usando punteros
         int vao; //Vertex Array Object
         int shaderProgram;
         int vbo;//Vertex Buffer Object
@@ -53,7 +54,8 @@ namespace MotorDeJuegos
         }
         
 
-        //Se llama una vez que inicia esta clase
+        //Se llama a esta clase una vez que el programa inicia
+        //Todo lo que es el proceso de los objetos pasa aqui
         protected override void OnLoad()
         {
             base.OnLoad();
@@ -100,12 +102,14 @@ namespace MotorDeJuegos
             GL.CompileShader(fragmentShader);
 
             // Attach the shaders to the shader program
-            GL.AttachShader(shaderProgram, vertexShader);
+            GL.AttachShader(shaderProgram, vertexShader); //Lo que pasa aqui es que el objeto programa se enlaza con el objeto shader
             GL.AttachShader(shaderProgram, fragmentShader);
 
+            //Ahora que ya creo todo se enlaza al OpenGL context
             // Link the program to OpenGL
             GL.LinkProgram(shaderProgram);
 
+            //Una buena practica es eliminar los shaders que se usan
             // delete the shaders
             GL.DeleteShader(vertexShader);
             GL.DeleteShader(fragmentShader);
@@ -125,25 +129,27 @@ namespace MotorDeJuegos
             GL.DeleteProgram(shaderProgram);
         }
 
-        //llamado en cada frame, toda la renderizacion pasa aqui
+        //llamado en cada frame, todo el dibujado pasa aqui
         protected override void OnRenderFrame(FrameEventArgs args)
         {
             
             
             
-          //   pone el color con el que se llenara la pantalla
-            GL.ClearColor(0.6f,0.3f,1.0f,1.0f);
-          //      //LLena la pantalla con ese color
-           GL.Clear(ClearBufferMask.ColorBufferBit);
+          //  Escoje el color con el que llenara la pantalla           
+            GL.ClearColor(0.6f,0.81f,0.11f,1.0f);
+          //  LLena la pantalla con ese color
+            GL.Clear(ClearBufferMask.ColorBufferBit);
+
+
 
             //Esto dibuja el triangulo
-            GL.UseProgram(shaderProgram); // une el vao
-            GL.BindVertexArray(vao); // usa el programa de shader
+            GL.UseProgram(shaderProgram); // Usa el shaderprogram
+            GL.BindVertexArray(vao); // usa el VAO
             GL.DrawArrays(PrimitiveType.Triangles, 0, 3);//Dibuja el triangulo  | args = Primitive type , first vertex, last vertex. Recibe los parametros: Tipo primitivo (clases que se usan para construir figuras en OpenGL), primer vertice y ultimo vertice
             //
             Context.SwapBuffers();
             base.OnRenderFrame(args);
-
+            
            
         }
 
@@ -151,6 +157,7 @@ namespace MotorDeJuegos
         protected override void OnUpdateFrame(FrameEventArgs args) //Nota que esto es un Override una sobreescritura de una funcion de la clase GameWindow
         {
             base.OnUpdateFrame(args);
+            
         }
 
         // Function to load a text file and return its contents as a string
